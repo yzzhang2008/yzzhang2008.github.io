@@ -1363,6 +1363,10 @@ pre code {
   .col-md-4 {
     width: 33.33333%;
   }
+  
+    .col-md-100 {
+    width: 93.33333%;
+  }
 
   .col-md-5 {
     width: 41.66667%;
