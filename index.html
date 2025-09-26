@@ -380,6 +380,7 @@ ACM CSUR, INFFUS, TCS, NN, AI, ACM TALLIP).
 <!-- projects -->
 <section class="colorlib-experience" data-section="project">
    <div class="colorlib-narrow-content">
+	   <hr style="border: 2px solid #000000"/>
       <h2 style="font-family:'Times New Roman', Times, serif; color:black;">Projects</h2>
 
       <ul>
@@ -458,91 +459,130 @@ ACM CSUR, INFFUS, TCS, NN, AI, ACM TALLIP).
 
 
 
+<!-- Teaching Section (Clean + Standardized) -->
+<section class="teaching" id="teaching" data-section="teaching" aria-label="Teaching">
+  <style>
+    /* ===== Teaching Styles (scoped to .teaching) ===== */
+    .teaching { --title-font: Arial, "Times New Roman", Times, serif; --text:#111; --muted:#555; --border:#eee; --accent:#000; }
+    .teaching * { box-sizing: border-box; }
 
-			<!-- teaching-->
-			<section class="colorlib-blog" data-section="teaching">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<hr style="border: 2px solid #000000"/>
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+    .teaching .container { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
 
-							<h2 style="font-family:Arial, Times; color:black;">Teaching</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="blog-entry">
-								<a class="blog-img"><img src="images/c1.jpg" class="img-responsive"></a>
-								<div class="desc">
-									
-									<h4 style="font-family:Arial, Times; color:black;">数据结构<br>
-									<p style="font-family:Arial, 'Arial', Times, serif; font-size:12px; color:black;">软件工程, 64学时</p></h4>
-								</div>
-							</div>
-						</div>
+    /* headline */
+    .teaching .headline { display: grid; grid-template-columns: 1fr minmax(0,600px) 1fr; align-items: center; gap: 12px; margin-bottom: 12px; }
+    .teaching .headline > *:first-child, .teaching .headline > *:last-child { height: 2px; background: var(--accent); }
+    .teaching h2 { font-family: var(--title-font); color: var(--text); font-size: 28px; font-weight: 700; text-align: center; margin: 8px 0; }
 
-						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="blog-entry">
-								<a href="#" class="blog-img"><img src="images/lisan.png" class="img-responsive"></a>
-								<div class="desc">
-									
-									<h4 style="font-family:Arial, Times; color:black;">离散数学<br>
-									<p style="font-family:Arial, 'Arial', Times, serif; font-size:12px; color:black;">智能与计算学部, 64学时</p></h4>
-								</div>
-							</div>
-						</div>
+    /* Responsive grid */
+    .teaching .grid { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 18px; 
+    }
 
-						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="blog-entry">
-								<a href="#" class="blog-img"><img src="images/sa.png" class="img-responsive"></a>
-								<div class="desc">
-									
-									<h4 style="font-family:Arial, Times; color:black;">心理与行为计算<br>
-									<p style="font-family:Arial, 'Arial', Times, serif; font-size:12px; color:black;">智能与计算学部, 32学时, 选修</p></h4>
-								</div>
-							</div>
-						</div>
-						
-						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="blog-entry">
-								<a href="#" class="blog-img"><img src="images/c2.jpg" class="img-responsive"></a>
-								<div class="desc">
-									
-									<h4 style="font-family:Arial, Times; color:black;">计算机专业英语<br>
-									<p style="font-family:Arial, 'Arial', Times, serif; font-size:12px; color:black;">软件工程, 32学时</p></h4>
-								</div>
-							</div>
-						</div>
+    /* Course card */
+    .teaching .card {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      background: #fff;
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .teaching .card:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,.06); }
 
+    /* Uniform media area (16:9) */
+    .teaching .media { position: relative; width: 100%; padding-top: 56.25%; background: #f5f5f5; overflow: hidden; }
+    .teaching .media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
 
-						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="blog-entry">
-								<a href="#" class="blog-img"><img src="images/c3.jpg" class="img-responsive"></a>
-								<div class="desc">
-									
-									<h4 style="font-family:Arial, Times; color:black;">Java程序设计技术<br>
-									<p style="font-family:Arial, 'Arial', Times, serif; font-size:12px; color:black;">软件工程, 64学时</p></h4>
-								</div>
-							</div>
-						</div>
-						
-						
-						
-						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="blog-entry">
-								<a href="#" class="blog-img"><img src="images/dpr.png" class="img-responsive"></a>
-								<div class="desc">
-									
-									<h4 style="font-family:Arial, Times; color:black;">设计模式<br>
-									<p style="font-family:Arial, 'Arial', Times, serif; font-size:12px; color:black;">国际教育学院, 软件工程, 64学时</p></h4>
-								</div>
-							</div>
-						</div>
+    /* Body */
+    .teaching .body { padding: 14px 14px 16px; }
+    .teaching .title { font-family: var(--title-font); color: var(--text); font-size: 18px; font-weight: 700; margin: 0 0 6px; line-height: 1.35; }
+    .teaching .meta { font-family: var(--title-font); color: var(--muted); font-size: 13px; line-height: 1.5; margin: 0; }
 
-						
-						
-				</div>
-			</section>
+    /* Small screen tweaks */
+    @media (max-width: 480px) {
+      .teaching h2 { font-size: 24px; }
+      .teaching .title { font-size: 16px; }
+    }
+  </style>
+
+  <div class="container">
+    <div class="headline" role="presentation" aria-hidden="true">
+      <div></div>
+      <h2>Teaching</h2>
+      <div></div>
+    </div>
+
+    <div class="grid" role="list">
+      <!-- 数据结构 -->
+      <article class="card" role="listitem" aria-label="数据结构">
+        <div class="media">
+          <img src="images/c1.jpg" alt="数据结构 课程图片" loading="lazy" />
+        </div>
+        <div class="body">
+          <h3 class="title">数据结构</h3>
+          <p class="meta">软件工程 · 64 学时</p>
+        </div>
+      </article>
+
+      <!-- 离散数学 -->
+      <article class="card" role="listitem" aria-label="离散数学">
+        <div class="media">
+          <img src="images/lisan.png" alt="离散数学 课程图片" loading="lazy" />
+        </div>
+        <div class="body">
+          <h3 class="title">离散数学</h3>
+          <p class="meta">智能与计算学部 · 64 学时</p>
+        </div>
+      </article>
+
+      <!-- 心理与行为计算 -->
+      <article class="card" role="listitem" aria-label="心理与行为计算">
+        <div class="media">
+          <img src="images/sa.png" alt="心理与行为计算 课程图片" loading="lazy" />
+        </div>
+        <div class="body">
+          <h3 class="title">心理与行为计算</h3>
+          <p class="meta">智能与计算学部 · 32 学时 · 选修</p>
+        </div>
+      </article>
+
+      <!-- 计算机专业英语 -->
+      <article class="card" role="listitem" aria-label="计算机专业英语">
+        <div class="media">
+          <img src="images/c2.jpg" alt="计算机专业英语 课程图片" loading="lazy" />
+        </div>
+        <div class="body">
+          <h3 class="title">计算机专业英语</h3>
+          <p class="meta">软件工程 · 32 学时</p>
+        </div>
+      </article>
+
+      <!-- Java程序设计技术 -->
+      <article class="card" role="listitem" aria-label="Java程序设计技术">
+        <div class="media">
+          <img src="images/c3.jpg" alt="Java 程序设计技术 课程图片" loading="lazy" />
+        </div>
+        <div class="body">
+          <h3 class="title">Java 程序设计技术</h3>
+          <p class="meta">软件工程 · 64 学时</p>
+        </div>
+      </article>
+
+      <!-- 设计模式 -->
+      <article class="card" role="listitem" aria-label="设计模式">
+        <div class="media">
+          <img src="images/dpr.png" alt="设计模式 课程图片" loading="lazy" />
+        </div>
+        <div class="body">
+          <h3 class="title">设计模式</h3>
+          <p class="meta">国际教育学院 · 软件工程 · 64 学时</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
 				
 
 
