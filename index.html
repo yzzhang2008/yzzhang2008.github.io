@@ -325,6 +325,8 @@ ACM CSUR, INFFUS, TCS, NN, AI, ACM TALLIP).
   </ol>
 </details>
 
+</br>										
+
 <h5 style="font-family:Arial, Times; color:black;"><b><u>[Corresponding Author]</u></b></h5>
 <ol>
   <li style="font-family:Arial, Times; color:black;font-size:15px;">Peiyi Zhang, <b>Yazhou Zhang<sup>*</sup></b>, Bo Wang, Lu Rong, Prayag Tiwari, Jing Qin. Edu-Values: Towards Evaluating the Chinese Education Values of Large Language Models. The Web Conference (WWW), Accept, 2025. <b>[CCF-A]</b></li>
@@ -346,7 +348,7 @@ ACM CSUR, INFFUS, TCS, NN, AI, ACM TALLIP).
 </details>
 
 									        
-										
+										</br>
 										<h3 style="font-family:Arial, Times; color:black;">Patents</h3>
 										<ol>
 										<li style="font-family:Arial; color:black; font-size:15px;"><b>Zhang Y</b>, Song D. 一种基于量子理论的多模态情感分析方法. 2020. [201710916759.8]</li>
@@ -357,6 +359,7 @@ ACM CSUR, INFFUS, TCS, NN, AI, ACM TALLIP).
 										<li style="font-family:Arial; color:black; font-size:15px;"><b>Zhang Y</b>, Ma J, Cui J, Li P, Zhu S. 一种基于量子理论的无监督文本情感分析方法. 2021. [202110113463.9]</li>
 										<li style="font-family:Arial; color:black; font-size:15px;">Ma J, <b>Zhang Y</b>, Chen R, Chu Y. 一种基于交互式长短期记忆网络的对话情感分析方法. 2021. [202110069022.3]</li>
 										</ol>
+										</br>
 										<h3 style="font-family:Arial; color:black;">Books</h3>
 										<ol>
 										<li style="font-family:Arial; color:black; font-size:15px;"><b>张亚洲</b>、戎璐、靳晓嘉等. 多模态情感分析：经典与量子. 西北工业大学出版社. 2024.11.</li>
@@ -543,207 +546,235 @@ ACM CSUR, INFFUS, TCS, NN, AI, ACM TALLIP).
 				
 
 
-<!-- team-->
-<section class="colorlib-blog" data-section="team">
-  <div class="colorlib-narrow-content">
-    <div class="row">
-      <hr style="border: 2px solid #000000"/>
-      <div class="col-md-6 col-md-offset-3 col-md-pull-3">
-        <h2 style="font-family: 'Times New Roman', Times, serif; color:black;">Research Team</h2>
-      </div>
+<!-- Team Section (Clean + Standardized) -->
+<section class="team" id="team" data-section="team" aria-label="Research Team">
+  <style>
+    /* ===== Team Styles (scoped to .team) ===== */
+    .team { --title-font:"Times New Roman", Times, serif; --text-color:#111; --accent:#000; }
+    .team * { box-sizing: border-box; }
+
+    .team .container { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+
+    .team hr { border: 0; border-top: 2px solid var(--accent); margin: 16px 0 24px; }
+
+    .team h2, .team h3 { font-family: var(--title-font); color: var(--text-color); margin: 0 0 12px; }
+    .team h2 { font-weight: 700; font-size: 28px; text-align: center; }
+    .team h3 { font-weight: 700; font-size: 20px; margin-top: 28px; }
+
+    /* Headline row alignment helper */
+    .team .headline { display: grid; grid-template-columns: 1fr minmax(0,600px) 1fr; align-items: center; gap: 12px; }
+    .team .headline > *:first-child { height: 2px; background: var(--accent); }
+    .team .headline > *:last-child { height: 2px; background: var(--accent); }
+    .team .headline h2 { grid-column: 2; margin: 8px 0; }
+
+    /* Group (e.g., [TJU], [PolyU]) */
+    .team .group { margin-top: 16px; }
+
+    /* Responsive grid for members */
+    .team .team-grid { 
+      display: grid; 
+      grid-template-columns: repeat( auto-fill, minmax(220px, 1fr) );
+      gap: 18px; 
+      margin-top: 8px;
+    }
+
+    /* Member card */
+    .team .member { 
+      background: #fff; 
+      border: 1px solid #eee; 
+      border-radius: 16px; 
+      padding: 16px; 
+      text-align: center; 
+      transition: transform .15s ease, box-shadow .15s ease; 
+    }
+    .team .member:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,.06); }
+
+    /* Uniform image wrapper (square, cover) */
+    .team .avatar { 
+      width: 120px; height: 120px; 
+      margin: 0 auto 12px; 
+      border-radius: 14px; 
+      overflow: hidden; 
+      background: #f3f3f3; 
+      border: 1px solid #eaeaea;
+    }
+    .team .avatar img { 
+      width: 100%; height: 100%; 
+      object-fit: cover; object-position: center; 
+      display: block; 
+    }
+
+    /* Text */
+    .team .desc { color: var(--text-color); font-family: var(--title-font); font-size: 14px; line-height: 1.55; }
+
+    /* Link reset for avatar */
+    .team .avatar-link { display: inline-block; line-height: 0; }
+
+    /* Utility for tag prefix like [TJU] inside text */
+    .team .tag { font-weight: 700; letter-spacing: .2px; }
+
+    /* Small screens tweaks */
+    @media (max-width: 480px) {
+      .team .avatar { width: 100px; height: 100px; }
+      .team .member { padding: 14px; }
+    }
+  </style>
+
+  <div class="container">
+    <div class="headline" role="presentation" aria-hidden="true">
+      <div></div>
+      <h2>Research Team</h2>
+      <div></div>
     </div>
 
-    <!-- TJU -->
-    <div class="row">
-      <div class="col-md-12">
-        <h3 style="font-family: 'Times New Roman', Times, serif; color:black;">[TJU]</h3>
-        <div class="team-container" style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: flex-start;">
-            <!-- Member 1 -->
-          <div class="team-member" style="flex: 1 1 30%; text-align: center;">
-            <a href="#" class="blog-img">
-              <img src="images/changhao.jpg" height="110" width="90" class="img-responsive" alt="Member Image" style="margin: 0 auto;">
-            </a>
-            <div class="desc">
-              <p style="font-family: 'Times New Roman', Times, serif; color:black;">
-                [TJU] 宋长皓, 2024级, 博士研究生, 研究方向是情感推理模型 [协助张鹏老师指导]
-              </p>
-            </div>
-          </div>
+    <!-- ===== [TJU] ===== -->
+    <section class="group" aria-labelledby="group-tju">
+      <h3 id="group-tju">[TJU]</h3>
+      <div class="team-grid">
+        <!-- Member 1 -->
+        <article class="member" aria-label="宋长皓">
+          <a class="avatar-link" href="#" aria-label="Profile link: 宋长皓">
+            <figure class="avatar">
+              <img src="images/changhao.jpg" alt="宋长皓" loading="lazy">
+            </figure>
+          </a>
+          <p class="desc"><span class="tag">[TJU]</span> 宋长皓，2024级，博士研究生，研究方向：情感推理模型（协助张鹏老师指导）。</p>
+        </article>
 
-          <!-- Member 2 -->
-          <div class="team-member" style="flex: 1 1 30%; text-align: center;">
-            <a href="#" class="blog-img">
-              <img src="images/junhao.jpg" height="110" width="90" class="img-responsive" alt="Member Image" style="margin: 0 auto;">
-            </a>
-            <div class="desc">
-              <p style="font-family: 'Times New Roman', Times, serif; color:black;">
-                [TJU] 郁军号, 2025级, 研究生, 研究方向是多模态大模型构建
-              </p>
-            </div>
-          </div>
-		          <!-- Member 3 -->
-          <div class="team-member" style="flex: 1 1 30%; text-align: center;">
-            <a href="#" class="blog-img">
-              <img src="images/haokun.jpg" height="110" width="90" class="img-responsive" alt="Member Image" style="margin: 0 auto;">
-            </a>
-            <div class="desc">
-              <p style="font-family: 'Times New Roman', Times, serif; color:black;">
-                [TJU] 李昊坤, 2025级, 研究生, 研究方向是大模型的认知能力评测 [协助张鹏老师指导]
-              </p>
-            </div>
-          </div>
+        <!-- Member 2 -->
+        <article class="member" aria-label="郁军号">
+          <a class="avatar-link" href="#" aria-label="Profile link: 郁军号">
+            <figure class="avatar">
+              <img src="images/junhao.jpg" alt="郁军号" loading="lazy">
+            </figure>
+          </a>
+          <p class="desc"><span class="tag">[TJU]</span> 郁军号，2025级，研究生，研究方向：多模态大模型构建。</p>
+        </article>
 
-          <!-- Member 4-->
-          <div class="team-member" style="flex: 1 1 30%; text-align: center;">
-            <a href="#" class="blog-img">
-              <img src="images/peiyi.jpg" height="110" width="90" class="img-responsive" alt="Member Image" style="margin: 0 auto;">
-            </a>
-            <div class="desc">
-              <p style="font-family: 'Times New Roman', Times, serif; color:black;">
-                  [TJU] 张佩怡, 2024级, 研究生, 研究方向是大模型的教育价值对齐 [协助王博老师指导]
-              </p>
-            </div>
-          </div>	
-        </div>
+        <!-- Member 3 -->
+        <article class="member" aria-label="李昊坤">
+          <a class="avatar-link" href="#" aria-label="Profile link: 李昊坤">
+            <figure class="avatar">
+              <img src="images/haokun.jpg" alt="李昊坤" loading="lazy">
+            </figure>
+          </a>
+          <p class="desc"><span class="tag">[TJU]</span> 李昊坤，2025级，研究生，研究方向：大模型的认知能力评测（协助张鹏老师指导）。</p>
+        </article>
+
+        <!-- Member 4 -->
+        <article class="member" aria-label="张佩怡">
+          <a class="avatar-link" href="#" aria-label="Profile link: 张佩怡">
+            <figure class="avatar">
+              <img src="images/peiyi.jpg" alt="张佩怡" loading="lazy">
+            </figure>
+          </a>
+          <p class="desc"><span class="tag">[TJU]</span> 张佩怡，2024级，研究生，研究方向：大模型的教育价值对齐（协助王博老师指导）。</p>
+        </article>
       </div>
-    </div>
+    </section>
 
-    <!-- PolyU -->
-    <div class="row">
-      <div class="col-md-12">
-        <h3 style="font-family: 'Times New Roman', Times, serif; color:black;">[PolyU]</h3>
-        <div class="team-container" style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: flex-start;">
-          		          <!-- Member 1 -->
-          <div class="team-member" style="flex: 1 1 30%; text-align: center;">
-            <a href="#" class="blog-img">
-              <img src="images/yaoben.jpg" height="110" width="90" class="img-responsive" alt="Member Image" style="margin: 0 auto;">
-            </a>
-            <div class="desc">
-              <p style="font-family: 'Times New Roman', Times, serif; color:black;">
-                [PolyU] 姚奔, 2025级, 博士生, 研究方向是护理价值对齐与医疗世界模型 [协助指导]
-              </p>
-            </div>
-          </div>
-        </div>
+    <!-- ===== [PolyU] ===== -->
+    <section class="group" aria-labelledby="group-polyu">
+      <h3 id="group-polyu">[PolyU]</h3>
+      <div class="team-grid">
+        <article class="member" aria-label="姚奔">
+          <a class="avatar-link" href="#" aria-label="Profile link: 姚奔">
+            <figure class="avatar">
+              <img src="images/yaoben.jpg" alt="姚奔" loading="lazy">
+            </figure>
+          </a>
+          <p class="desc"><span class="tag">[PolyU]</span> 姚奔，2025级，博士生，研究方向：护理价值对齐与医疗世界模型（协助指导）。</p>
+        </article>
       </div>
-    </div>
+    </section>
 
-    <!-- ZZULI -->
-    <div class="row">
-      <div class="col-md-12">
-        <h3 style="font-family: 'Times New Roman', Times, serif; color:black;">[ZZULI]</h3>
-        <div class="team-container" style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: flex-start;">
+    <!-- ===== [ZZULI] ===== -->
+    <section class="group" aria-labelledby="group-zzuli">
+      <h3 id="group-zzuli">[ZZULI]</h3>
+      <div class="team-grid">
+        <article class="member" aria-label="俞洋">
+          <a class="avatar-link" href="#" aria-label="Profile link: 俞洋">
+            <figure class="avatar">
+              <img src="images/yang.jpg" alt="俞洋" loading="lazy">
+            </figure>
+          </a>
+          <p class="desc"><span class="tag">[ZZULI]</span> 俞洋，2020级，已毕业；去向：兰州大学读博。研究方向：多模态对话情感分析。</p>
+        </article>
 
-          <!-- Member 1 -->
-          <div class="team-member" style="flex: 1 1 30%; text-align: center;">
-            <a href="#" class="blog-img">
-              <img src="images/yang.jpg" height="110" width="90" class="img-responsive" alt="Member Image" style="margin: 0 auto;">
-            </a>
-            <div class="desc">
-              <p style="font-family: 'Times New Roman', Times, serif; color:black;">
-                [ZZULI] 俞洋, 2020级, 已毕业, 前往兰州大学读博, 研究方向是多模态对话情感分析
-              </p>
-            </div>
-          </div>
+        <article class="member" aria-label="和玉">
+          <a class="avatar-link" href="#" aria-label="Profile link: 和玉">
+            <figure class="avatar">
+              <img src="images/yu.jpg" alt="和玉" loading="lazy">
+            </figure>
+          </a>
+          <p class="desc"><span class="tag">[ZZULI]</span> 和玉，2021级，已毕业；去向：郑州银行软件开发部。研究方向：讽刺、欲望识别。</p>
+        </article>
 
-          <!-- Member 2 -->
-          <div class="team-member" style="flex: 1 1 30%; text-align: center;">
-            <a href="#" class="blog-img">
-              <img src="images/yu.jpg" height="110" width="90" class="img-responsive" alt="Member Image" style="margin: 0 auto;">
-            </a>
-            <div class="desc">
-              <p style="font-family: 'Times New Roman', Times, serif; color:black;">
-                [ZZULI] 和玉, 2021级, 已毕业, 前往郑州银行软件开发部, 研究方向是讽刺、欲望识别
-              </p>
-            </div>
-          </div>
+        <article class="member" aria-label="王梦遥">
+          <a class="avatar-link" href="#" aria-label="Profile link: 王梦遥">
+            <figure class="avatar">
+              <img src="images/yao.jpg" alt="王梦遥" loading="lazy">
+            </figure>
+          </a>
+          <p class="desc"><span class="tag">[ZZULI]</span> 王梦遥，2022级，已毕业；去向：重庆大学读博。研究方向：多模态讽刺检测。</p>
+        </article>
 
-          <!-- Member 3 -->
-          <div class="team-member" style="flex: 1 1 30%; text-align: center;">
-            <a href="#" class="blog-img">
-              <img src="images/yao.jpg" height="110" width="90" class="img-responsive" alt="Member Image" style="margin: 0 auto;">
-            </a>
-            <div class="desc">
-              <p style="font-family: 'Times New Roman', Times, serif; color:black;">
-                [ZZULI] 王梦遥, 2022级, 已毕业, 前往重庆大学读博, 研究方向是多模态讽刺检测
-              </p>
-            </div>
-          </div>
+        <article class="member" aria-label="刘祈蒙">
+          <a class="avatar-link" href="#" aria-label="Profile link: 刘祈蒙">
+            <figure class="avatar">
+              <img src="images/meng.jpg" alt="刘祈蒙" loading="lazy">
+            </figure>
+          </a>
+          <p class="desc"><span class="tag">[ZZULI]</span> 刘祈蒙，2023级。研究方向：情感大语言模型、思维链。</p>
+        </article>
 
-          <!-- Member 4 -->
-          <div class="team-member" style="flex: 1 1 30%; text-align: center;">
-            <a href="#" class="blog-img">
-              <img src="images/meng.jpg" height="110" width="90" class="img-responsive" alt="Member Image" style="margin: 0 auto;">
-            </a>
-            <div class="desc">
-              <p style="font-family: 'Times New Roman', Times, serif; color:black;">
-                [ZZULI] 刘祈蒙, 2023级, 研究方向是情感大语言模型、思维链
-              </p>
-            </div>
-          </div>
-
-          <!-- Member 5 -->
-          <div class="team-member" style="flex: 1 1 30%; text-align: center;">
-            <a href="#" class="blog-img">
-              <img src="images/zouc.jpg" height="110" width="90" class="img-responsive" alt="Member Image" style="margin: 0 auto;">
-            </a>
-            <div class="desc">
-              <p style="font-family: 'Times New Roman', Times, serif; color:black;">
-                [ZZULI] 邹春旺, 2023级, 研究方向是讽刺理解大语言模型
-              </p>
-            </div>
-          </div>
-        </div>
+        <article class="member" aria-label="邹春旺">
+          <a class="avatar-link" href="#" aria-label="Profile link: 邹春旺">
+            <figure class="avatar">
+              <img src="images/zouc.jpg" alt="邹春旺" loading="lazy">
+            </figure>
+          </a>
+          <p class="desc"><span class="tag">[ZZULI]</span> 邹春旺，2023级。研究方向：讽刺理解大语言模型。</p>
+        </article>
       </div>
-    </div>
+    </section>
 
-    <!-- BIT -->
-    <div class="row">
-      <div class="col-md-12">
-        <h3 style="font-family: 'Times New Roman', Times, serif; color:black;">[BIT]</h3>
-        <div class="team-container" style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: flex-start;">
+    <!-- ===== [BIT] ===== -->
+    <section class="group" aria-labelledby="group-bit">
+      <h3 id="group-bit">[BIT]</h3>
+      <div class="team-grid">
+        <article class="member" aria-label="刘耀琛">
+          <a class="avatar-link" href="#" aria-label="Profile link: 刘耀琛">
+            <figure class="avatar">
+              <img src="images/liu.jpg" alt="刘耀琛" loading="lazy">
+            </figure>
+          </a>
+          <p class="desc"><span class="tag">[BIT]</span> 刘耀琛，2020级，已毕业。研究方向：多模态情感分析、量子认知。</p>
+        </article>
 
-          <!-- Member 6 -->
-          <div class="team-member" style="flex: 1 1 30%; text-align: center;">
-            <a href="#" class="blog-img">
-              <img src="images/liu.jpg" height="110" width="90" class="img-responsive" alt="Member Image" style="margin: 0 auto;">
-            </a>
-            <div class="desc">
-              <p style="font-family: 'Times New Roman', Times, serif; color:black;">
-                [BIT] 刘耀琛, 2020级, 已毕业, 研究方向是多模态情感分析、量子认知
-              </p>
-            </div>
-          </div>
+        <article class="member" aria-label="马放">
+          <a class="avatar-link" href="#" aria-label="Profile link: 马放">
+            <figure class="avatar">
+              <img src="images/ma.jpg" alt="马放" loading="lazy">
+            </figure>
+          </a>
+          <p class="desc"><span class="tag">[BIT]</span> 马放，2020级，已毕业。研究方向：对话情感分析、偏见检测。</p>
+        </article>
 
-          <!-- Member 7 -->
-          <div class="team-member" style="flex: 1 1 30%; text-align: center;">
-            <a href="#" class="blog-img">
-              <img src="images/ma.jpg" height="100" width="80" class="img-responsive" alt="Member Image" style="margin: 0 auto;">
-            </a>
-            <div class="desc">
-              <p style="font-family: 'Times New Roman', Times, serif; color:black;">
-                [BIT] 马放, 2020级, 已毕业, 研究方向是对话情感分析、偏见检测
-              </p>
-            </div>
-          </div>
-
-          <!-- Member 8 -->
-          <div class="team-member" style="flex: 1 1 30%; text-align: center;">
-            <a href="#" class="blog-img">
-              <img src="images/jia.jpg" height="100" width="80" class="img-responsive" alt="Member Image" style="margin: 0 auto;">
-            </a>
-            <div class="desc">
-              <p style="font-family: 'Times New Roman', Times, serif; color:black;">
-                [BIT] 贾奥, 2022级, 研究方向是多模态欲望识别、多任务学习
-              </p>
-            </div>
-          </div>
-        </div>
+        <article class="member" aria-label="贾奥">
+          <a class="avatar-link" href="#" aria-label="Profile link: 贾奥">
+            <figure class="avatar">
+              <img src="images/jia.jpg" alt="贾奥" loading="lazy">
+            </figure>
+          </a>
+          <p class="desc"><span class="tag">[BIT]</span> 贾奥，2022级。研究方向：多模态欲望识别、多任务学习。</p>
+        </article>
       </div>
-    </div>
+    </section>
 
   </div>
 </section>
+
 
 				
 
