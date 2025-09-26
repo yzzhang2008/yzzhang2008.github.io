@@ -458,8 +458,7 @@ ACM CSUR, INFFUS, TCS, NN, AI, ACM TALLIP).
 </section>
 
 
-
-<!-- Teaching Section (Taller Cards) -->
+<!-- Teaching Section (Taller Cards, Left-aligned Title) -->
 <section class="teaching" id="teaching" data-section="teaching" aria-label="Teaching">
   <style>
     .teaching { --title-font: Arial, "Times New Roman", Times, serif; --text:#111; --muted:#555; --border:#eee; --accent:#000; }
@@ -467,9 +466,8 @@ ACM CSUR, INFFUS, TCS, NN, AI, ACM TALLIP).
 
     .teaching .container { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
 
-    .teaching .headline { display: grid; grid-template-columns: 1fr minmax(0,600px) 1fr; align-items: center; gap: 12px; margin-bottom: 12px; }
-    .teaching .headline > *:first-child, .teaching .headline > *:last-child { height: 2px; background: var(--accent); }
-    .teaching h2 { font-family: var(--title-font); color: var(--text); font-size: 28px; font-weight: 700; text-align: center; margin: 8px 0; }
+    .teaching hr { border: 0; border-top: 2px solid var(--accent); margin: 16px 0 12px; }
+    .teaching h2 { font-family: var(--title-font); color: var(--text); font-size: 28px; font-weight: 700; margin: 0 0 20px; text-align: left; }
 
     .teaching .grid { 
       display: grid; 
@@ -483,7 +481,7 @@ ACM CSUR, INFFUS, TCS, NN, AI, ACM TALLIP).
       overflow: hidden;
       background: #fff;
       transition: transform .15s ease, box-shadow .15s ease;
-      min-height: 400px; /* increased height */
+      min-height: 400px;
       display: flex;
       flex-direction: column;
     }
@@ -504,12 +502,8 @@ ACM CSUR, INFFUS, TCS, NN, AI, ACM TALLIP).
   </style>
 
   <div class="container">
-    <div class="headline" role="presentation" aria-hidden="true">
-      <div></div>
-      <hr style="border: 2px solid #000000"/>
-      <h2 style="font-family:'Times New Roman', Times, serif; color:black;">Teaching</h2>
-      <div></div>
-    </div>
+    <hr />
+    <h2>Teaching</h2>
 
     <div class="grid" role="list">
       <article class="card" role="listitem" aria-label="数据结构">
@@ -798,7 +792,7 @@ ACM CSUR, INFFUS, TCS, NN, AI, ACM TALLIP).
 </section>
 
 
-				
+		</br>		
 
 			
 			<section class="colorlib-contact" data-section="contact">
